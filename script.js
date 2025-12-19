@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ===== МОБИЛЬНОЕ МЕНЮ =====
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileMenuClose = document.querySelector('.mobile-menu-close');
@@ -22,10 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===== ВИДЕО =====
     const video = document.getElementById('header-video');
     
-    // Обработка ошибки видео
+    // ошибки видео
     if (video) {
         video.addEventListener('error', function() {
             console.log('Видео не загрузилось, используем фон');
@@ -34,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'linear-gradient(135deg, #2c3e50 0%, #3498db 100%)';
         });
         
-        // Пытаемся запустить видео
+        // попытка запуститт видео
         video.muted = true;
         const playPromise = video.play();
         
@@ -45,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ===== ФОРМА =====
+    //форма
     const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
     
@@ -61,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Имитация отправки
+        // отправка
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         
@@ -75,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
             
-            // Скрыть сообщение через 5 секунд
+            // скрытие соо через 5 мин
             setTimeout(() => {
                 formMessage.style.display = 'none';
             }, 5000);
@@ -89,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formMessage.style.display = 'block';
     }
     
-    // ===== ПЛАВНАЯ ПРОКРУТКА =====
+    // прокрутка
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -111,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===== АНИМАЦИЯ ПРИ ПРОКРУТКЕ =====
+    // анрмация для прокрутки 
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -130,4 +128,5 @@ document.addEventListener('DOMContentLoaded', function() {
         el.classList.add('fade-in');
         observer.observe(el);
     });
+
 });
