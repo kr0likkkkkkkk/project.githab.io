@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSphere Studio - Создаем цифровые площадки для вашего бизнеса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Шапка с видео и меню -->
+    <header class="header">
+        <!-- Видеофон -->
+        <video autoplay muted loop playsinline id="header-video">
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-overlay"></div>
+
+        <!-- Навигация -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">WebSphere<span>Studio</span></a>
+
+                <!-- Десктопное меню -->
+                <ul class="nav-menu">
+                    <li><a href="#services">Услуги</a></li>
+                    <li class="dropdown">
+                        <a href="#solutions">Решения <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#ecommerce">E-commerce</a></li>
+                            <li><a href="#portals">Корпоративные порталы</a></li>
+                            <li><a href="#crm">Интеграция CRM</a></li>
+                            <li><a href="#migration">Миграция</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+
+                <!-- Кнопка мобильного меню -->
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="#" class="logo">WebSphere<span>Studio</span></a>
+                <div class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="#services">Услуги</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#solutions">Решения <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#ecommerce">E-commerce</a></li>
+                        <li><a href="#portals">Корпоративные порталы</a></li>
+                        <li><a href="#crm">Интеграция CRM</a></li>
+                        <li><a href="#migration">Миграция</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Заголовок с слоганом -->
+        <div class="hero-content">
+            <div class="container">
+                <h1>Создаем цифровые площадки для вашего бизнеса</h1>
+                <p>Веб-разработка, e-commerce, корпоративные порталы, цифровая трансформация бизнеса</p>
+                <a href="#contact" class="btn">Обсудить проект</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция услуг -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Полный цикл разработки цифровых решений</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Веб-разработка</h3>
+                        <p>Создание современных сайтов и веб-приложений</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce</h3>
+                        <p>Разработка интернет-магазинов и платформ</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Корпоративные порталы</h3>
+                        <p>Создание внутренних систем управления</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Цифровая трансформация</h3>
+                        <p>Модернизация IT-инфраструктуры бизнеса</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция о нас -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">О WebSphere Studio</h2>
+                <p class="section-subtitle">Современная студия с акцентом на качество, скорость и результат</p>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Мы создаем цифровые решения для бизнеса любого масштаба: от стартапов до крупных корпораций.
+                            Наша специализация — создание комплексных веб-платформ, которые не только выглядят
+                            современно, но и приносят реальную прибыль.</p>
+                        <p>За 7 лет работы мы реализовали более 150 проектов, помогая компаниям увеличивать продажи,
+                            оптимизировать процессы и выходить на новые рынки через цифровые технологии.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-text">Проектов</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">7 лет</div>
+                            <div class="stat-text">Опыта</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-text">Рекомендуют</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция проектов -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Наши проекты</h2>
+                <p class="section-subtitle">Примеры реализованных решений</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="project-tag">E-commerce</div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Интернет-магазин "ModaStyle"</h3>
+                            <p>Платформа для онлайн-продаж одежды с интеграцией платежных систем и CRM</p>
+                            <a href="#" class="project-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-building"></i>
+                            <div class="project-tag">Корпоративный портал</div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Портал "BuildCorp"</h3>
+                            <p>Система управления проектами для строительной компании с 500+ сотрудниками</p>
+                            <a href="#" class="project-link">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="project-tag">Трансформация</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Цифровизация "FoodService"</h3>
+                            <p>Модернизация IT-инфраструктуры для сети ресторанов быстрого питания</p>
+                            <a href="#" class="project-link">Подробнее →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция контактов -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Обсудим ваш проект и предложим решение</p>
+
+                <div class="contact-container">
+                    <!-- Контактная информация -->
+                    <div class="contact-info">
+                        <h3>Контакты</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>г. Краснодар, ул. Технологическая, 42</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (861) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@websphere-studio.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Режим работы</h4>
+                                <p>Пн-Пт: 9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Форма обратной связи -->
+                    <div class="contact-form">
+                        <h3>Оставить заявку</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Телефон">
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option value="">Интересующая услуга</option>
+                                    <option value="web">Веб-разработка</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="portal">Корпоративные порталы</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Опишите ваш проект" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Отправить заявку</button>
+                        </form>
+                        <div id="formMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">WebSphere<span>Studio</span></a>
+                    <p>Создаем цифровые площадки для вашего бизнеса</p>
+                </div>
+
+                <div class="footer-info">
+                    <p>WebSphere Studio © 2023</p>
+                    <p>г. Краснодар, ул. Технологическая, 42</p>
+                    <p>info@websphere-studio.ru</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
